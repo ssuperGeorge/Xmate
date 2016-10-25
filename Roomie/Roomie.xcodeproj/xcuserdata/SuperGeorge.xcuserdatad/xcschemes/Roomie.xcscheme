@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "036ACB5D1DA4496200DE59E2"
+               BlueprintIdentifier = "032D2CE41DAEF43A00820209"
                BuildableName = "Roomie.app"
                BlueprintName = "Roomie"
                ReferencedContainer = "container:Roomie.xcodeproj">
@@ -28,31 +28,11 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "036ACB741DA4496200DE59E2"
-               BuildableName = "RoomieTests.xctest"
-               BlueprintName = "RoomieTests"
-               ReferencedContainer = "container:Roomie.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "036ACB7F1DA4496200DE59E2"
-               BuildableName = "RoomieUITests.xctest"
-               BlueprintName = "RoomieUITests"
-               ReferencedContainer = "container:Roomie.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "036ACB5D1DA4496200DE59E2"
+            BlueprintIdentifier = "032D2CE41DAEF43A00820209"
             BuildableName = "Roomie.app"
             BlueprintName = "Roomie"
             ReferencedContainer = "container:Roomie.xcodeproj">
@@ -75,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "036ACB5D1DA4496200DE59E2"
+            BlueprintIdentifier = "032D2CE41DAEF43A00820209"
             BuildableName = "Roomie.app"
             BlueprintName = "Roomie"
             ReferencedContainer = "container:Roomie.xcodeproj">
@@ -94,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "036ACB5D1DA4496200DE59E2"
+            BlueprintIdentifier = "032D2CE41DAEF43A00820209"
             BuildableName = "Roomie.app"
             BlueprintName = "Roomie"
             ReferencedContainer = "container:Roomie.xcodeproj">
