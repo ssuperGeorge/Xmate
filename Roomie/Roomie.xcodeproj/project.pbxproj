@@ -13,12 +13,15 @@
 		032D2CF11DAEF43A00820209 /* Roomie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 032D2CEF1DAEF43A00820209 /* Roomie.xcdatamodeld */; };
 		032D2CF31DAEF43A00820209 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 032D2CF21DAEF43A00820209 /* Assets.xcassets */; };
 		032D2CF61DAEF43A00820209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032D2CF41DAEF43A00820209 /* LaunchScreen.storyboard */; };
-		032D2CFE1DAEF7AC00820209 /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032D2CFD1DAEF7AC00820209 /* ChatController.swift */; };
+		032D2CFE1DAEF7AC00820209 /* ChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032D2CFD1DAEF7AC00820209 /* ChatLogController.swift */; };
 		03C95CFE1DBF285100ABC83F /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95CFD1DBF285100ABC83F /* FriendCell.swift */; };
 		03C95D121DBF37E000ABC83F /* Message+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95D0E1DBF37E000ABC83F /* Message+CoreDataProperties.swift */; };
 		03C95D131DBF37E000ABC83F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95D0F1DBF37E000ABC83F /* Message.swift */; };
 		03C95D141DBF37E000ABC83F /* Friend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95D101DBF37E000ABC83F /* Friend+CoreDataProperties.swift */; };
 		03C95D151DBF37E000ABC83F /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95D111DBF37E000ABC83F /* Friend.swift */; };
+		03C95D181DBFB27000ABC83F /* ChatHistoryControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95D171DBFB27000ABC83F /* ChatHistoryControllerHelper.swift */; };
+		03C95D1A1DBFCBF800ABC83F /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95D191DBFCBF800ABC83F /* Utility.swift */; };
+		03C95D1C1DBFD6B200ABC83F /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95D1B1DBFD6B200ABC83F /* BaseCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,12 +33,15 @@
 		032D2CF21DAEF43A00820209 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		032D2CF51DAEF43A00820209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		032D2CF71DAEF43A00820209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		032D2CFD1DAEF7AC00820209 /* ChatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		032D2CFD1DAEF7AC00820209 /* ChatLogController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatLogController.swift; sourceTree = "<group>"; };
 		03C95CFD1DBF285100ABC83F /* FriendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
 		03C95D0E1DBF37E000ABC83F /* Message+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		03C95D0F1DBF37E000ABC83F /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		03C95D101DBF37E000ABC83F /* Friend+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		03C95D111DBF37E000ABC83F /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		03C95D171DBFB27000ABC83F /* ChatHistoryControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatHistoryControllerHelper.swift; sourceTree = "<group>"; };
+		03C95D191DBFCBF800ABC83F /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		03C95D1B1DBFD6B200ABC83F /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +74,7 @@
 		032D2CE71DAEF43A00820209 /* Roomie */ = {
 			isa = PBXGroup;
 			children = (
-				03C95D161DBF384200ABC83F /* model */,
+				03C95D161DBF384200ABC83F /* Model */,
 				03C95D001DBF365900ABC83F /* Controller */,
 				03C95CFF1DBF364200ABC83F /* View */,
 				032D2CE81DAEF43A00820209 /* AppDelegate.swift */,
@@ -77,6 +83,7 @@
 				032D2CF41DAEF43A00820209 /* LaunchScreen.storyboard */,
 				032D2CF71DAEF43A00820209 /* Info.plist */,
 				032D2CEF1DAEF43A00820209 /* Roomie.xcdatamodeld */,
+				03C95D191DBFCBF800ABC83F /* Utility.swift */,
 			);
 			path = Roomie;
 			sourceTree = "<group>";
@@ -85,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				03C95CFD1DBF285100ABC83F /* FriendCell.swift */,
+				03C95D1B1DBFD6B200ABC83F /* BaseCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -93,12 +101,13 @@
 			isa = PBXGroup;
 			children = (
 				032D2CEA1DAEF43A00820209 /* ChatHistoryController.swift */,
-				032D2CFD1DAEF7AC00820209 /* ChatController.swift */,
+				032D2CFD1DAEF7AC00820209 /* ChatLogController.swift */,
+				03C95D171DBFB27000ABC83F /* ChatHistoryControllerHelper.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
 		};
-		03C95D161DBF384200ABC83F /* model */ = {
+		03C95D161DBF384200ABC83F /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				03C95D0E1DBF37E000ABC83F /* Message+CoreDataProperties.swift */,
@@ -106,7 +115,7 @@
 				03C95D101DBF37E000ABC83F /* Friend+CoreDataProperties.swift */,
 				03C95D111DBF37E000ABC83F /* Friend.swift */,
 			);
-			name = model;
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,10 +191,13 @@
 			files = (
 				032D2CF11DAEF43A00820209 /* Roomie.xcdatamodeld in Sources */,
 				032D2CEB1DAEF43A00820209 /* ChatHistoryController.swift in Sources */,
-				032D2CFE1DAEF7AC00820209 /* ChatController.swift in Sources */,
+				032D2CFE1DAEF7AC00820209 /* ChatLogController.swift in Sources */,
+				03C95D1A1DBFCBF800ABC83F /* Utility.swift in Sources */,
+				03C95D1C1DBFD6B200ABC83F /* BaseCell.swift in Sources */,
 				032D2CE91DAEF43A00820209 /* AppDelegate.swift in Sources */,
 				03C95D141DBF37E000ABC83F /* Friend+CoreDataProperties.swift in Sources */,
 				03C95CFE1DBF285100ABC83F /* FriendCell.swift in Sources */,
+				03C95D181DBFB27000ABC83F /* ChatHistoryControllerHelper.swift in Sources */,
 				03C95D131DBF37E000ABC83F /* Message.swift in Sources */,
 				03C95D121DBF37E000ABC83F /* Message+CoreDataProperties.swift in Sources */,
 				03C95D151DBF37E000ABC83F /* Friend.swift in Sources */,
@@ -307,7 +319,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.g.xmate.Roomie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Roomie/Roomie-Bridging-Header.h";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -322,7 +334,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.g.xmate.Roomie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Roomie/Roomie-Bridging-Header.h";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 			};
 			name = Release;
 		};

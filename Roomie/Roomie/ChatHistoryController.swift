@@ -10,44 +10,34 @@
 import UIKit
 
 class ChatHistoryController: UITableViewController {
+    
+    private var messages: [Message]?
 
     private let cellId = "friendsCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationItem.title = "Recent"
-        
-        tableView?.backgroundColor = UIColor.whiteColor()
-        tableView.rowHeight = 80
-        
-//        tableView.registerClass(ChatHistoryCell.self, forCellReuseIdentifier: cellId)
+        navigationItem.title = "Roomie"
+        clearHistory()
+        loadHistory()
     }
+    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        if let n = messages?.count{
+            return n
+        }
+        return 0
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(cellId, forIndexPath: indexPath) as! FriendCell
-        
+        if let message = messages?[indexPath.row] {
+            cell.message = message
+        }
         return cell
     }
 }
 
-extension UIView {
-    
-    func addConstraintsWithFormat(format: String, views: UIView...) {
-        
-        var viewsDictionary = [String: UIView]()
-        for (index, view) in views.enumerate() {
-            let key = "v\(index)"
-            viewsDictionary[key] = view
-            view.translatesAutoresizingMaskIntoConstraints = false
-        }
-        
-        addConstraints(NSLayoutConstraint.constraintsWithVisualFormat(format, options: NSLayoutFormatOptions(), metrics: nil, views: viewsDictionary))
-    }
-    
-}
+
 
 

@@ -9,20 +9,22 @@
 import UIKit
 
 class FriendCell: BaseCell {
-    
-    private var friend: Friend?{
-    
-        didSet{
-            nameLabel.text = friend.name
-            profileImageView.image = UIImage(named: friend.profileImage)
-        }
-    }
-    
-    private var message: Message?{
+
+    var message: Message?{
     
         didSet{
-            messageLabel.text = message.text
-            timeLabel.text = message.time
+            messageLabel.text = message?.text
+            if let date = message?.time {
+                
+                let dateFormatter = NSDateFormatter()
+                dateFormatter.dateFormat = "h:mm a"
+                
+                timeLabel.text = dateFormatter.stringFromDate(date)
+            }
+            nameLabel.text = message?.friend?.name
+            if let imageProfile = message?.friend?.profileImage{
+                profileImageView.image = UIImage(named: imageProfile)
+            }
         }
     }
     
@@ -91,17 +93,3 @@ class FriendCell: BaseCell {
     
 }
 
-class BaseCell: UITableViewCell {
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        setupViews()
-    }
-    
-    func setupViews(){
-        
-    }
-}
