@@ -11,9 +11,9 @@ import UIKit
 
 class ChatHistoryController: UITableViewController {
     
-    var conversations: [Conversation]?
+    
 
-    private let cellId = "ConversationCell"
+    fileprivate let cellId = "ConversationCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,15 +22,13 @@ class ChatHistoryController: UITableViewController {
         loadHistory()
     }
     
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let n = conversations?.count{
-            return n
-        }
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
         return 0
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(cellId, forIndexPath: indexPath) as! ConversationCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! ConversationCell
         
         return cell
     }

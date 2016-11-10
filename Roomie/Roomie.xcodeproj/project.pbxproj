@@ -15,15 +15,9 @@
 		032D2CF61DAEF43A00820209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032D2CF41DAEF43A00820209 /* LaunchScreen.storyboard */; };
 		032D2CFE1DAEF7AC00820209 /* ChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032D2CFD1DAEF7AC00820209 /* ChatLogController.swift */; };
 		03C95CFE1DBF285100ABC83F /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95CFD1DBF285100ABC83F /* FriendCell.swift */; };
-		03C95D121DBF37E000ABC83F /* Message+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95D0E1DBF37E000ABC83F /* Message+CoreDataProperties.swift */; };
-		03C95D131DBF37E000ABC83F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95D0F1DBF37E000ABC83F /* Message.swift */; };
-		03C95D141DBF37E000ABC83F /* Friend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95D101DBF37E000ABC83F /* Friend+CoreDataProperties.swift */; };
-		03C95D151DBF37E000ABC83F /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95D111DBF37E000ABC83F /* Friend.swift */; };
 		03C95D181DBFB27000ABC83F /* ChatHistoryControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95D171DBFB27000ABC83F /* ChatHistoryControllerHelper.swift */; };
 		03C95D1A1DBFCBF800ABC83F /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95D191DBFCBF800ABC83F /* Utility.swift */; };
 		03C95D1C1DBFD6B200ABC83F /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95D1B1DBFD6B200ABC83F /* BaseCell.swift */; };
-		03E522781DD383B50013FAF3 /* Conversation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E522761DD383B50013FAF3 /* Conversation+CoreDataProperties.swift */; };
-		03E522791DD383B50013FAF3 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E522771DD383B50013FAF3 /* Conversation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,15 +31,9 @@
 		032D2CF71DAEF43A00820209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		032D2CFD1DAEF7AC00820209 /* ChatLogController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatLogController.swift; sourceTree = "<group>"; };
 		03C95CFD1DBF285100ABC83F /* FriendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
-		03C95D0E1DBF37E000ABC83F /* Message+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		03C95D0F1DBF37E000ABC83F /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		03C95D101DBF37E000ABC83F /* Friend+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		03C95D111DBF37E000ABC83F /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		03C95D171DBFB27000ABC83F /* ChatHistoryControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatHistoryControllerHelper.swift; sourceTree = "<group>"; };
 		03C95D191DBFCBF800ABC83F /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		03C95D1B1DBFD6B200ABC83F /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
-		03E522761DD383B50013FAF3 /* Conversation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Conversation+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		03E522771DD383B50013FAF3 /* Conversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +66,6 @@
 		032D2CE71DAEF43A00820209 /* Roomie */ = {
 			isa = PBXGroup;
 			children = (
-				03C95D161DBF384200ABC83F /* Model */,
 				03C95D001DBF365900ABC83F /* Controller */,
 				03C95CFF1DBF364200ABC83F /* View */,
 				032D2CE81DAEF43A00820209 /* AppDelegate.swift */,
@@ -111,19 +98,6 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
-		03C95D161DBF384200ABC83F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				03E522761DD383B50013FAF3 /* Conversation+CoreDataProperties.swift */,
-				03E522771DD383B50013FAF3 /* Conversation.swift */,
-				03C95D0E1DBF37E000ABC83F /* Message+CoreDataProperties.swift */,
-				03C95D0F1DBF37E000ABC83F /* Message.swift */,
-				03C95D101DBF37E000ABC83F /* Friend+CoreDataProperties.swift */,
-				03C95D111DBF37E000ABC83F /* Friend.swift */,
-			);
-			name = Model;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,11 +125,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Xmate;
 				TargetAttributes = {
 					032D2CE41DAEF43A00820209 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -199,16 +174,10 @@
 				032D2CEB1DAEF43A00820209 /* ChatHistoryController.swift in Sources */,
 				032D2CFE1DAEF7AC00820209 /* ChatLogController.swift in Sources */,
 				03C95D1A1DBFCBF800ABC83F /* Utility.swift in Sources */,
-				03E522791DD383B50013FAF3 /* Conversation.swift in Sources */,
 				03C95D1C1DBFD6B200ABC83F /* BaseCell.swift in Sources */,
 				032D2CE91DAEF43A00820209 /* AppDelegate.swift in Sources */,
-				03C95D141DBF37E000ABC83F /* Friend+CoreDataProperties.swift in Sources */,
-				03E522781DD383B50013FAF3 /* Conversation+CoreDataProperties.swift in Sources */,
 				03C95CFE1DBF285100ABC83F /* FriendCell.swift in Sources */,
 				03C95D181DBFB27000ABC83F /* ChatHistoryControllerHelper.swift in Sources */,
-				03C95D131DBF37E000ABC83F /* Message.swift in Sources */,
-				03C95D121DBF37E000ABC83F /* Message+CoreDataProperties.swift in Sources */,
-				03C95D151DBF37E000ABC83F /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,8 +217,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -293,8 +264,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -313,6 +286,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -329,6 +303,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -343,6 +318,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.g.xmate.Roomie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

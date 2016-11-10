@@ -19,7 +19,7 @@ class ConversationCell: BaseCell {
     
     let profileImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.contentMode = .ScaleAspectFill
+        imageView.contentMode = .scaleAspectFill
         imageView.layer.cornerRadius = 5
         imageView.layer.masksToBounds = true
         return imageView
@@ -33,21 +33,21 @@ class ConversationCell: BaseCell {
     
     let nameLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFontOfSize(18)
+        label.font = UIFont.systemFont(ofSize: 18)
         return label
     }()
     
     let messageLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor.darkGrayColor()
-        label.font = UIFont.systemFontOfSize(13)
+        label.textColor = UIColor.darkGray
+        label.font = UIFont.systemFont(ofSize: 13)
         return label
     }()
     
     let timeLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFontOfSize(12)
-        label.textAlignment = .Right
+        label.font = UIFont.systemFont(ofSize: 12)
+        label.textAlignment = .right
         return label
     }()
     
@@ -63,7 +63,7 @@ class ConversationCell: BaseCell {
         addConstraintsWithFormat("V:[v0(1)]|", views: dividerLineView)
     }
     
-    private func setupContainerView() {
+    fileprivate func setupContainerView() {
         let containerView = UIView()
         addSubview(containerView)
         
