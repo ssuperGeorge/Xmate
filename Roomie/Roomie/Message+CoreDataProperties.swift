@@ -2,7 +2,7 @@
 //  Message+CoreDataProperties.swift
 //  Roomie
 //
-//  Created by SuperGeorge on 10/25/16.
+//  Created by Guozhu Zheng on 11/9/16.
 //  Copyright © 2016 Xmate. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -15,7 +15,8 @@ import CoreData
 extension Message {
 
     @NSManaged var text: String?
-    @NSManaged var time: NSDate?
-    @NSManaged var friend: Friend?
+    @NSManaged var sentDate: NSDate?
+    @NSManaged var from: Friend?
+    @NSManaged var in: Conversation?
 
 }

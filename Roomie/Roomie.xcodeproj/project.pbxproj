@@ -22,6 +22,8 @@
 		03C95D181DBFB27000ABC83F /* ChatHistoryControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95D171DBFB27000ABC83F /* ChatHistoryControllerHelper.swift */; };
 		03C95D1A1DBFCBF800ABC83F /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95D191DBFCBF800ABC83F /* Utility.swift */; };
 		03C95D1C1DBFD6B200ABC83F /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95D1B1DBFD6B200ABC83F /* BaseCell.swift */; };
+		03E522781DD383B50013FAF3 /* Conversation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E522761DD383B50013FAF3 /* Conversation+CoreDataProperties.swift */; };
+		03E522791DD383B50013FAF3 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E522771DD383B50013FAF3 /* Conversation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		03C95D171DBFB27000ABC83F /* ChatHistoryControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatHistoryControllerHelper.swift; sourceTree = "<group>"; };
 		03C95D191DBFCBF800ABC83F /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		03C95D1B1DBFD6B200ABC83F /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		03E522761DD383B50013FAF3 /* Conversation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Conversation+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		03E522771DD383B50013FAF3 /* Conversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				032D2CEA1DAEF43A00820209 /* ChatHistoryController.swift */,
-				032D2CFD1DAEF7AC00820209 /* ChatLogController.swift */,
 				03C95D171DBFB27000ABC83F /* ChatHistoryControllerHelper.swift */,
+				032D2CFD1DAEF7AC00820209 /* ChatLogController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -110,6 +114,8 @@
 		03C95D161DBF384200ABC83F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				03E522761DD383B50013FAF3 /* Conversation+CoreDataProperties.swift */,
+				03E522771DD383B50013FAF3 /* Conversation.swift */,
 				03C95D0E1DBF37E000ABC83F /* Message+CoreDataProperties.swift */,
 				03C95D0F1DBF37E000ABC83F /* Message.swift */,
 				03C95D101DBF37E000ABC83F /* Friend+CoreDataProperties.swift */,
@@ -193,9 +199,11 @@
 				032D2CEB1DAEF43A00820209 /* ChatHistoryController.swift in Sources */,
 				032D2CFE1DAEF7AC00820209 /* ChatLogController.swift in Sources */,
 				03C95D1A1DBFCBF800ABC83F /* Utility.swift in Sources */,
+				03E522791DD383B50013FAF3 /* Conversation.swift in Sources */,
 				03C95D1C1DBFD6B200ABC83F /* BaseCell.swift in Sources */,
 				032D2CE91DAEF43A00820209 /* AppDelegate.swift in Sources */,
 				03C95D141DBF37E000ABC83F /* Friend+CoreDataProperties.swift in Sources */,
+				03E522781DD383B50013FAF3 /* Conversation+CoreDataProperties.swift in Sources */,
 				03C95CFE1DBF285100ABC83F /* FriendCell.swift in Sources */,
 				03C95D181DBFB27000ABC83F /* ChatHistoryControllerHelper.swift in Sources */,
 				03C95D131DBF37E000ABC83F /* Message.swift in Sources */,

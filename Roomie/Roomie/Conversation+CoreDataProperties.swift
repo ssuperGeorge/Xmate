@@ -1,5 +1,5 @@
 //
-//  Friend+CoreDataProperties.swift
+//  Conversation+CoreDataProperties.swift
 //  Roomie
 //
 //  Created by Guozhu Zheng on 11/9/16.
@@ -12,11 +12,11 @@
 import Foundation
 import CoreData
 
-extension Friend {
+extension Conversation {
 
-    @NSManaged var name: String?
-    @NSManaged var profileImage: String?
-    @NSManaged var conversations: NSSet?
-    @NSManaged var messages: NSSet?
+    @NSManaged var latestUpdateTime: NSDate?
+    @NSManaged var title: String?
+    @NSManaged var participants: NSSet?
+    @NSManaged var chatLogs: NSSet?
 
 }
