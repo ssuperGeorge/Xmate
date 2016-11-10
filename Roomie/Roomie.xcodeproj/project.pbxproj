@@ -7,66 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		036ACB621DA4496200DE59E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036ACB611DA4496200DE59E2 /* AppDelegate.swift */; };
-		036ACB641DA4496200DE59E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036ACB631DA4496200DE59E2 /* ViewController.swift */; };
-		036ACB671DA4496200DE59E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 036ACB651DA4496200DE59E2 /* Main.storyboard */; };
-		036ACB6A1DA4496200DE59E2 /* Roomie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 036ACB681DA4496200DE59E2 /* Roomie.xcdatamodeld */; };
-		036ACB6C1DA4496200DE59E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 036ACB6B1DA4496200DE59E2 /* Assets.xcassets */; };
-		036ACB6F1DA4496200DE59E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 036ACB6D1DA4496200DE59E2 /* LaunchScreen.storyboard */; };
-		036ACB7A1DA4496200DE59E2 /* RoomieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036ACB791DA4496200DE59E2 /* RoomieTests.swift */; };
-		036ACB851DA4496200DE59E2 /* RoomieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036ACB841DA4496200DE59E2 /* RoomieUITests.swift */; };
+		032D2CE91DAEF43A00820209 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032D2CE81DAEF43A00820209 /* AppDelegate.swift */; };
+		032D2CEB1DAEF43A00820209 /* ChatHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032D2CEA1DAEF43A00820209 /* ChatHistoryController.swift */; };
+		032D2CEE1DAEF43A00820209 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032D2CEC1DAEF43A00820209 /* Main.storyboard */; };
+		032D2CF11DAEF43A00820209 /* Roomie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 032D2CEF1DAEF43A00820209 /* Roomie.xcdatamodeld */; };
+		032D2CF31DAEF43A00820209 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 032D2CF21DAEF43A00820209 /* Assets.xcassets */; };
+		032D2CF61DAEF43A00820209 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032D2CF41DAEF43A00820209 /* LaunchScreen.storyboard */; };
+		032D2CFE1DAEF7AC00820209 /* ChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032D2CFD1DAEF7AC00820209 /* ChatLogController.swift */; };
+		03C95CFE1DBF285100ABC83F /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95CFD1DBF285100ABC83F /* FriendCell.swift */; };
+		03C95D121DBF37E000ABC83F /* Message+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95D0E1DBF37E000ABC83F /* Message+CoreDataProperties.swift */; };
+		03C95D131DBF37E000ABC83F /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95D0F1DBF37E000ABC83F /* Message.swift */; };
+		03C95D141DBF37E000ABC83F /* Friend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95D101DBF37E000ABC83F /* Friend+CoreDataProperties.swift */; };
+		03C95D151DBF37E000ABC83F /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95D111DBF37E000ABC83F /* Friend.swift */; };
+		03C95D181DBFB27000ABC83F /* ChatHistoryControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95D171DBFB27000ABC83F /* ChatHistoryControllerHelper.swift */; };
+		03C95D1A1DBFCBF800ABC83F /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95D191DBFCBF800ABC83F /* Utility.swift */; };
+		03C95D1C1DBFD6B200ABC83F /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C95D1B1DBFD6B200ABC83F /* BaseCell.swift */; };
+		03E522781DD383B50013FAF3 /* Conversation+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E522761DD383B50013FAF3 /* Conversation+CoreDataProperties.swift */; };
+		03E522791DD383B50013FAF3 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E522771DD383B50013FAF3 /* Conversation.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		036ACB761DA4496200DE59E2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 036ACB561DA4496200DE59E2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 036ACB5D1DA4496200DE59E2;
-			remoteInfo = Roomie;
-		};
-		036ACB811DA4496200DE59E2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 036ACB561DA4496200DE59E2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 036ACB5D1DA4496200DE59E2;
-			remoteInfo = Roomie;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		036ACB5E1DA4496200DE59E2 /* Roomie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roomie.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		036ACB611DA4496200DE59E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		036ACB631DA4496200DE59E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		036ACB661DA4496200DE59E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		036ACB691DA4496200DE59E2 /* Roomie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Roomie.xcdatamodel; sourceTree = "<group>"; };
-		036ACB6B1DA4496200DE59E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		036ACB6E1DA4496200DE59E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		036ACB701DA4496200DE59E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		036ACB751DA4496200DE59E2 /* RoomieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoomieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		036ACB791DA4496200DE59E2 /* RoomieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomieTests.swift; sourceTree = "<group>"; };
-		036ACB7B1DA4496200DE59E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		036ACB801DA4496200DE59E2 /* RoomieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoomieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		036ACB841DA4496200DE59E2 /* RoomieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomieUITests.swift; sourceTree = "<group>"; };
-		036ACB861DA4496200DE59E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		032D2CE51DAEF43A00820209 /* Roomie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roomie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		032D2CE81DAEF43A00820209 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		032D2CEA1DAEF43A00820209 /* ChatHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHistoryController.swift; sourceTree = "<group>"; };
+		032D2CED1DAEF43A00820209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		032D2CF01DAEF43A00820209 /* Roomie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Roomie.xcdatamodel; sourceTree = "<group>"; };
+		032D2CF21DAEF43A00820209 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		032D2CF51DAEF43A00820209 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		032D2CF71DAEF43A00820209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		032D2CFD1DAEF7AC00820209 /* ChatLogController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatLogController.swift; sourceTree = "<group>"; };
+		03C95CFD1DBF285100ABC83F /* FriendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
+		03C95D0E1DBF37E000ABC83F /* Message+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Message+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		03C95D0F1DBF37E000ABC83F /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		03C95D101DBF37E000ABC83F /* Friend+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		03C95D111DBF37E000ABC83F /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		03C95D171DBFB27000ABC83F /* ChatHistoryControllerHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatHistoryControllerHelper.swift; sourceTree = "<group>"; };
+		03C95D191DBFCBF800ABC83F /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		03C95D1B1DBFD6B200ABC83F /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		03E522761DD383B50013FAF3 /* Conversation+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Conversation+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		03E522771DD383B50013FAF3 /* Conversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		036ACB5B1DA4496200DE59E2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		036ACB721DA4496200DE59E2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		036ACB7D1DA4496200DE59E2 /* Frameworks */ = {
+		032D2CE21DAEF43A00820209 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,68 +59,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		036ACB551DA4496200DE59E2 = {
+		032D2CDC1DAEF43A00820209 = {
 			isa = PBXGroup;
 			children = (
-				036ACB601DA4496200DE59E2 /* Roomie */,
-				036ACB781DA4496200DE59E2 /* RoomieTests */,
-				036ACB831DA4496200DE59E2 /* RoomieUITests */,
-				036ACB5F1DA4496200DE59E2 /* Products */,
+				032D2CE71DAEF43A00820209 /* Roomie */,
+				032D2CE61DAEF43A00820209 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		036ACB5F1DA4496200DE59E2 /* Products */ = {
+		032D2CE61DAEF43A00820209 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				036ACB5E1DA4496200DE59E2 /* Roomie.app */,
-				036ACB751DA4496200DE59E2 /* RoomieTests.xctest */,
-				036ACB801DA4496200DE59E2 /* RoomieUITests.xctest */,
+				032D2CE51DAEF43A00820209 /* Roomie.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		036ACB601DA4496200DE59E2 /* Roomie */ = {
+		032D2CE71DAEF43A00820209 /* Roomie */ = {
 			isa = PBXGroup;
 			children = (
-				036ACB611DA4496200DE59E2 /* AppDelegate.swift */,
-				036ACB631DA4496200DE59E2 /* ViewController.swift */,
-				036ACB651DA4496200DE59E2 /* Main.storyboard */,
-				036ACB6B1DA4496200DE59E2 /* Assets.xcassets */,
-				036ACB6D1DA4496200DE59E2 /* LaunchScreen.storyboard */,
-				036ACB701DA4496200DE59E2 /* Info.plist */,
-				036ACB681DA4496200DE59E2 /* Roomie.xcdatamodeld */,
+				03C95D161DBF384200ABC83F /* Model */,
+				03C95D001DBF365900ABC83F /* Controller */,
+				03C95CFF1DBF364200ABC83F /* View */,
+				032D2CE81DAEF43A00820209 /* AppDelegate.swift */,
+				032D2CEC1DAEF43A00820209 /* Main.storyboard */,
+				032D2CF21DAEF43A00820209 /* Assets.xcassets */,
+				032D2CF41DAEF43A00820209 /* LaunchScreen.storyboard */,
+				032D2CF71DAEF43A00820209 /* Info.plist */,
+				032D2CEF1DAEF43A00820209 /* Roomie.xcdatamodeld */,
+				03C95D191DBFCBF800ABC83F /* Utility.swift */,
 			);
 			path = Roomie;
 			sourceTree = "<group>";
 		};
-		036ACB781DA4496200DE59E2 /* RoomieTests */ = {
+		03C95CFF1DBF364200ABC83F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				036ACB791DA4496200DE59E2 /* RoomieTests.swift */,
-				036ACB7B1DA4496200DE59E2 /* Info.plist */,
+				03C95CFD1DBF285100ABC83F /* FriendCell.swift */,
+				03C95D1B1DBFD6B200ABC83F /* BaseCell.swift */,
 			);
-			path = RoomieTests;
+			name = View;
 			sourceTree = "<group>";
 		};
-		036ACB831DA4496200DE59E2 /* RoomieUITests */ = {
+		03C95D001DBF365900ABC83F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				036ACB841DA4496200DE59E2 /* RoomieUITests.swift */,
-				036ACB861DA4496200DE59E2 /* Info.plist */,
+				032D2CEA1DAEF43A00820209 /* ChatHistoryController.swift */,
+				03C95D171DBFB27000ABC83F /* ChatHistoryControllerHelper.swift */,
+				032D2CFD1DAEF7AC00820209 /* ChatLogController.swift */,
 			);
-			path = RoomieUITests;
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		03C95D161DBF384200ABC83F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				03E522761DD383B50013FAF3 /* Conversation+CoreDataProperties.swift */,
+				03E522771DD383B50013FAF3 /* Conversation.swift */,
+				03C95D0E1DBF37E000ABC83F /* Message+CoreDataProperties.swift */,
+				03C95D0F1DBF37E000ABC83F /* Message.swift */,
+				03C95D101DBF37E000ABC83F /* Friend+CoreDataProperties.swift */,
+				03C95D111DBF37E000ABC83F /* Friend.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		036ACB5D1DA4496200DE59E2 /* Roomie */ = {
+		032D2CE41DAEF43A00820209 /* Roomie */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 036ACB891DA4496200DE59E2 /* Build configuration list for PBXNativeTarget "Roomie" */;
+			buildConfigurationList = 032D2CFA1DAEF43A00820209 /* Build configuration list for PBXNativeTarget "Roomie" */;
 			buildPhases = (
-				036ACB5A1DA4496200DE59E2 /* Sources */,
-				036ACB5B1DA4496200DE59E2 /* Frameworks */,
-				036ACB5C1DA4496200DE59E2 /* Resources */,
+				032D2CE11DAEF43A00820209 /* Sources */,
+				032D2CE21DAEF43A00820209 /* Frameworks */,
+				032D2CE31DAEF43A00820209 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -145,69 +141,25 @@
 			);
 			name = Roomie;
 			productName = Roomie;
-			productReference = 036ACB5E1DA4496200DE59E2 /* Roomie.app */;
+			productReference = 032D2CE51DAEF43A00820209 /* Roomie.app */;
 			productType = "com.apple.product-type.application";
-		};
-		036ACB741DA4496200DE59E2 /* RoomieTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 036ACB8C1DA4496200DE59E2 /* Build configuration list for PBXNativeTarget "RoomieTests" */;
-			buildPhases = (
-				036ACB711DA4496200DE59E2 /* Sources */,
-				036ACB721DA4496200DE59E2 /* Frameworks */,
-				036ACB731DA4496200DE59E2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				036ACB771DA4496200DE59E2 /* PBXTargetDependency */,
-			);
-			name = RoomieTests;
-			productName = RoomieTests;
-			productReference = 036ACB751DA4496200DE59E2 /* RoomieTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		036ACB7F1DA4496200DE59E2 /* RoomieUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 036ACB8F1DA4496200DE59E2 /* Build configuration list for PBXNativeTarget "RoomieUITests" */;
-			buildPhases = (
-				036ACB7C1DA4496200DE59E2 /* Sources */,
-				036ACB7D1DA4496200DE59E2 /* Frameworks */,
-				036ACB7E1DA4496200DE59E2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				036ACB821DA4496200DE59E2 /* PBXTargetDependency */,
-			);
-			name = RoomieUITests;
-			productName = RoomieUITests;
-			productReference = 036ACB801DA4496200DE59E2 /* RoomieUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		036ACB561DA4496200DE59E2 /* Project object */ = {
+		032D2CDD1DAEF43A00820209 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Xmate;
 				TargetAttributes = {
-					036ACB5D1DA4496200DE59E2 = {
+					032D2CE41DAEF43A00820209 = {
 						CreatedOnToolsVersion = 7.3.1;
-					};
-					036ACB741DA4496200DE59E2 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 036ACB5D1DA4496200DE59E2;
-					};
-					036ACB7F1DA4496200DE59E2 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 036ACB5D1DA4496200DE59E2;
 					};
 				};
 			};
-			buildConfigurationList = 036ACB591DA4496200DE59E2 /* Build configuration list for PBXProject "Roomie" */;
+			buildConfigurationList = 032D2CE01DAEF43A00820209 /* Build configuration list for PBXProject "Roomie" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -215,100 +167,66 @@
 				en,
 				Base,
 			);
-			mainGroup = 036ACB551DA4496200DE59E2;
-			productRefGroup = 036ACB5F1DA4496200DE59E2 /* Products */;
+			mainGroup = 032D2CDC1DAEF43A00820209;
+			productRefGroup = 032D2CE61DAEF43A00820209 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				036ACB5D1DA4496200DE59E2 /* Roomie */,
-				036ACB741DA4496200DE59E2 /* RoomieTests */,
-				036ACB7F1DA4496200DE59E2 /* RoomieUITests */,
+				032D2CE41DAEF43A00820209 /* Roomie */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		036ACB5C1DA4496200DE59E2 /* Resources */ = {
+		032D2CE31DAEF43A00820209 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				036ACB6F1DA4496200DE59E2 /* LaunchScreen.storyboard in Resources */,
-				036ACB6C1DA4496200DE59E2 /* Assets.xcassets in Resources */,
-				036ACB671DA4496200DE59E2 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		036ACB731DA4496200DE59E2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		036ACB7E1DA4496200DE59E2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				032D2CF61DAEF43A00820209 /* LaunchScreen.storyboard in Resources */,
+				032D2CF31DAEF43A00820209 /* Assets.xcassets in Resources */,
+				032D2CEE1DAEF43A00820209 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		036ACB5A1DA4496200DE59E2 /* Sources */ = {
+		032D2CE11DAEF43A00820209 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				036ACB6A1DA4496200DE59E2 /* Roomie.xcdatamodeld in Sources */,
-				036ACB641DA4496200DE59E2 /* ViewController.swift in Sources */,
-				036ACB621DA4496200DE59E2 /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		036ACB711DA4496200DE59E2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				036ACB7A1DA4496200DE59E2 /* RoomieTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		036ACB7C1DA4496200DE59E2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				036ACB851DA4496200DE59E2 /* RoomieUITests.swift in Sources */,
+				032D2CF11DAEF43A00820209 /* Roomie.xcdatamodeld in Sources */,
+				032D2CEB1DAEF43A00820209 /* ChatHistoryController.swift in Sources */,
+				032D2CFE1DAEF7AC00820209 /* ChatLogController.swift in Sources */,
+				03C95D1A1DBFCBF800ABC83F /* Utility.swift in Sources */,
+				03E522791DD383B50013FAF3 /* Conversation.swift in Sources */,
+				03C95D1C1DBFD6B200ABC83F /* BaseCell.swift in Sources */,
+				032D2CE91DAEF43A00820209 /* AppDelegate.swift in Sources */,
+				03C95D141DBF37E000ABC83F /* Friend+CoreDataProperties.swift in Sources */,
+				03E522781DD383B50013FAF3 /* Conversation+CoreDataProperties.swift in Sources */,
+				03C95CFE1DBF285100ABC83F /* FriendCell.swift in Sources */,
+				03C95D181DBFB27000ABC83F /* ChatHistoryControllerHelper.swift in Sources */,
+				03C95D131DBF37E000ABC83F /* Message.swift in Sources */,
+				03C95D121DBF37E000ABC83F /* Message+CoreDataProperties.swift in Sources */,
+				03C95D151DBF37E000ABC83F /* Friend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		036ACB771DA4496200DE59E2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 036ACB5D1DA4496200DE59E2 /* Roomie */;
-			targetProxy = 036ACB761DA4496200DE59E2 /* PBXContainerItemProxy */;
-		};
-		036ACB821DA4496200DE59E2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 036ACB5D1DA4496200DE59E2 /* Roomie */;
-			targetProxy = 036ACB811DA4496200DE59E2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		036ACB651DA4496200DE59E2 /* Main.storyboard */ = {
+		032D2CEC1DAEF43A00820209 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				036ACB661DA4496200DE59E2 /* Base */,
+				032D2CED1DAEF43A00820209 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		036ACB6D1DA4496200DE59E2 /* LaunchScreen.storyboard */ = {
+		032D2CF41DAEF43A00820209 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				036ACB6E1DA4496200DE59E2 /* Base */,
+				032D2CF51DAEF43A00820209 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -316,7 +234,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		036ACB871DA4496200DE59E2 /* Debug */ = {
+		032D2CF81DAEF43A00820209 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -361,7 +279,7 @@
 			};
 			name = Debug;
 		};
-		036ACB881DA4496200DE59E2 /* Release */ = {
+		032D2CF91DAEF43A00820209 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -399,124 +317,70 @@
 			};
 			name = Release;
 		};
-		036ACB8A1DA4496200DE59E2 /* Debug */ = {
+		032D2CFB1DAEF43A00820209 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Roomie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.g.xmate.Roomie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		036ACB8B1DA4496200DE59E2 /* Release */ = {
+		032D2CFC1DAEF43A00820209 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Roomie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.g.xmate.Roomie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		036ACB8D1DA4496200DE59E2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = RoomieTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.g.xmate.RoomieTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roomie.app/Roomie";
-			};
-			name = Debug;
-		};
-		036ACB8E1DA4496200DE59E2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = RoomieTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.g.xmate.RoomieTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Roomie.app/Roomie";
-			};
-			name = Release;
-		};
-		036ACB901DA4496200DE59E2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = RoomieUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.g.xmate.RoomieUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Roomie;
-			};
-			name = Debug;
-		};
-		036ACB911DA4496200DE59E2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = RoomieUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.g.xmate.RoomieUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = Roomie;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		036ACB591DA4496200DE59E2 /* Build configuration list for PBXProject "Roomie" */ = {
+		032D2CE01DAEF43A00820209 /* Build configuration list for PBXProject "Roomie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				036ACB871DA4496200DE59E2 /* Debug */,
-				036ACB881DA4496200DE59E2 /* Release */,
+				032D2CF81DAEF43A00820209 /* Debug */,
+				032D2CF91DAEF43A00820209 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		036ACB891DA4496200DE59E2 /* Build configuration list for PBXNativeTarget "Roomie" */ = {
+		032D2CFA1DAEF43A00820209 /* Build configuration list for PBXNativeTarget "Roomie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				036ACB8A1DA4496200DE59E2 /* Debug */,
-				036ACB8B1DA4496200DE59E2 /* Release */,
+				032D2CFB1DAEF43A00820209 /* Debug */,
+				032D2CFC1DAEF43A00820209 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		036ACB8C1DA4496200DE59E2 /* Build configuration list for PBXNativeTarget "RoomieTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				036ACB8D1DA4496200DE59E2 /* Debug */,
-				036ACB8E1DA4496200DE59E2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		036ACB8F1DA4496200DE59E2 /* Build configuration list for PBXNativeTarget "RoomieUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				036ACB901DA4496200DE59E2 /* Debug */,
-				036ACB911DA4496200DE59E2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		036ACB681DA4496200DE59E2 /* Roomie.xcdatamodeld */ = {
+		032D2CEF1DAEF43A00820209 /* Roomie.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				036ACB691DA4496200DE59E2 /* Roomie.xcdatamodel */,
+				032D2CF01DAEF43A00820209 /* Roomie.xcdatamodel */,
 			);
-			currentVersion = 036ACB691DA4496200DE59E2 /* Roomie.xcdatamodel */;
+			currentVersion = 032D2CF01DAEF43A00820209 /* Roomie.xcdatamodel */;
 			path = Roomie.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = 036ACB561DA4496200DE59E2 /* Project object */;
+	rootObject = 032D2CDD1DAEF43A00820209 /* Project object */;
 }

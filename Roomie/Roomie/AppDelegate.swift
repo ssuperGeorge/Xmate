@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Roomie
 //
-//  Created by Guozhu Zheng on 10/4/16.
+//  Created by Guozhu Zheng on 10/12/16.
 //  Copyright © 2016 Xmate. All rights reserved.
 //
 
