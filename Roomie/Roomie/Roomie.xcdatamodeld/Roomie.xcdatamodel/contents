@@ -2,25 +2,25 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11542" systemVersion="16B2657" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Conversation" representedClassName=".Conversation" syncable="YES" codeGenerationType="class">
         <attribute name="latestUpdateTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="chatLogs" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Message" inverseName="conversation" inverseEntity="Message" syncable="YES"/>
-        <relationship name="participants" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Friend" inverseName="conversations" inverseEntity="Friend" syncable="YES"/>
+        <attribute name="title" attributeType="String" syncable="YES"/>
+        <relationship name="chatLogs" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Message" inverseName="conversation" inverseEntity="Message" syncable="YES"/>
+        <relationship name="participants" toMany="YES" deletionRule="Nullify" destinationEntity="Friend" inverseName="conversations" inverseEntity="Friend" syncable="YES"/>
     </entity>
     <entity name="Friend" representedClassName=".Friend" syncable="YES" codeGenerationType="class">
-        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
         <attribute name="profileImage" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="conversations" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Conversation" inverseName="participants" inverseEntity="Conversation" syncable="YES"/>
-        <relationship name="messages" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Message" inverseName="from" inverseEntity="Message" syncable="YES"/>
+        <relationship name="conversations" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Conversation" inverseName="participants" inverseEntity="Conversation" syncable="YES"/>
+        <relationship name="messages" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Message" inverseName="from" inverseEntity="Message" syncable="YES"/>
     </entity>
     <entity name="Message" representedClassName=".Message" syncable="YES" codeGenerationType="class">
-        <attribute name="sentDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="text" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="conversation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Conversation" inverseName="chatLogs" inverseEntity="Conversation" syncable="YES"/>
-        <relationship name="from" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Friend" inverseName="messages" inverseEntity="Friend" syncable="YES"/>
+        <attribute name="sentDate" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="text" attributeType="String" syncable="YES"/>
+        <relationship name="conversation" maxCount="1" deletionRule="Nullify" destinationEntity="Conversation" inverseName="chatLogs" inverseEntity="Conversation" syncable="YES"/>
+        <relationship name="from" maxCount="1" deletionRule="Nullify" destinationEntity="Friend" inverseName="messages" inverseEntity="Friend" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Conversation" positionX="-54" positionY="-63" width="128" height="105"/>
-        <element name="Friend" positionX="-11" positionY="207" width="128" height="105"/>
-        <element name="Message" positionX="259" positionY="14" width="128" height="105"/>
+        <element name="Conversation" positionX="-54" positionY="-63" width="128" height="103"/>
+        <element name="Friend" positionX="-11" positionY="207" width="128" height="103"/>
+        <element name="Message" positionX="259" positionY="14" width="128" height="103"/>
     </elements>
 </model>

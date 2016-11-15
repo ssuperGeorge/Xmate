@@ -1,26 +1,53 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="46x-JI-gy9">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="UPc-lq-1RM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="YIA-6U-Eay">
+            <objects>
+                <navigationController id="UPc-lq-1RM" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" opaque="NO" contentMode="scaleToFill" translucent="NO" id="sAi-bR-RPC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" id="azV-AY-ETc">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="CD5-x4-wTt" kind="relationship" relationship="rootViewController" id="R4E-3U-ah1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ic0-bE-Q1A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2745" y="260"/>
+        </scene>
         <!--Root View Controller-->
         <scene sceneID="i4y-89-vEJ">
             <objects>
                 <tableViewController id="Tnk-oR-LEN" customClass="ChatHistoryController" customModule="Roomie" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="86" sectionHeaderHeight="28" sectionFooterHeight="28" id="vpj-8I-9bs">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" alpha="0.29999999999999999" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="friendsCell" id="Ykp-05-tyT" customClass="FriendCell" customModule="Roomie" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="320" height="86"/>
+                            <tableViewCell clipsSubviews="YES" alpha="0.29999999999999999" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ConversationCell" id="Ykp-05-tyT" customClass="ConversationCell" customModule="Roomie" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="86"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="Ykp-05-tyT" id="ikP-Cf-lF5">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="86"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="c48-q3-tc4" kind="push" identifier="showChatlog" id="zsZ-ux-1eD"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -28,27 +55,100 @@
                             <outlet property="delegate" destination="Tnk-oR-LEN" id="ft6-1E-7HH"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" badgeValue="1" systemItem="recents" id="2HZ-Wg-wwa"/>
                     <navigationItem key="navigationItem" title="Root View Controller" id="GiQ-7Q-Wff"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S7v-HD-5Bt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-297" y="-150"/>
+            <point key="canvasLocation" x="-1338" y="-217"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="pVN-Xe-ezT">
+        <!--Chat Log Controller-->
+        <scene sceneID="TS2-3p-2QH">
             <objects>
-                <navigationController id="46x-JI-gy9" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IAz-yB-pba">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="Tnk-oR-LEN" kind="relationship" relationship="rootViewController" id="oP9-0W-4UO"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rN5-kv-8my" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="c48-q3-tc4" customClass="ChatLogController" customModule="Roomie" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="DL1-dv-gkn">
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="logCell" id="gDp-iZ-N66" customClass="MessageCell" customModule="Roomie" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gDp-iZ-N66" id="AC0-0p-Ed6">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="c48-q3-tc4" id="FGC-l1-nqw"/>
+                            <outlet property="delegate" destination="c48-q3-tc4" id="ohE-Tq-Jee"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="zCq-ew-70t"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kum-4n-VN8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-813" y="-150"/>
+            <point key="canvasLocation" x="-559.5" y="323.5"/>
+        </scene>
+        <!--Friend List Controller-->
+        <scene sceneID="DQ8-N7-oH8">
+            <objects>
+                <tableViewController id="PwT-lD-Jcg" customClass="FriendListController" customModule="Roomie" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="an0-Tc-4MK">
+                        <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="friendCell" id="kW6-v8-70a" customClass="FriendCell" customModule="Roomie" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kW6-v8-70a" id="eYD-n1-3PA">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="c48-q3-tc4" kind="push" identifier="showChatLog" id="aHq-c9-CsM"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="PwT-lD-Jcg" id="SjJ-PB-5Ic"/>
+                            <outlet property="delegate" destination="PwT-lD-Jcg" id="cfF-Im-yMn"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="T8L-2k-xYd"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ei-j3-SUY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1337" y="735"/>
+        </scene>
+        <!--Roomie Home Controller-->
+        <scene sceneID="lGG-QU-nZ3">
+            <objects>
+                <tabBarController id="CD5-x4-wTt" customClass="RoomieHomeController" customModule="Roomie" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="EkO-e5-dOG"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" translucent="NO" id="Qu8-ay-3Sc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Tnk-oR-LEN" kind="relationship" relationship="viewControllers" id="Vg2-TC-4df"/>
+                        <segue destination="PwT-lD-Jcg" kind="relationship" relationship="viewControllers" id="YcO-u9-IX4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="65I-vQ-i6x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2147" y="260"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="aHq-c9-CsM"/>
+    </inferredMetricsTieBreakers>
 </document>

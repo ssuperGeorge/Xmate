@@ -2,20 +2,28 @@
 //  FriendCell.swift
 //  Roomie
 //
-//  Created by Guozhu Zheng on 11/13/16.
+//  Created by SuperGeorge on 10/25/16.
 //  Copyright © 2016 Xmate. All rights reserved.
 //
 
 import UIKit
 
-class FriendCell:BaseCell{
+class ConversationCell: BaseCell {
+
+    var conversation:Conversation?{
     
-    var friend:Friend?{
         didSet{
-            if let f = friend {
-                nameLabel.text = f.name
-                profileImageView.image = UIImage(named: f.profileImage!)
+            nameLabel.text = conversation?.title
+            if let messages = conversation?.chatLogs{
+                let lastMessage = messages.lastObject as! Message
+                messageLabel.text = lastMessage.text
+                
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "H:mm"
+                timeLabel.text = dateFormatter.string(from: lastMessage.sentDate as! Date)
             }
+            let friend = conversation?.participants?.anyObject() as! Friend
+            profileImageView.image = UIImage(named: friend.profileImage!)
         }
     }
     
@@ -39,14 +47,28 @@ class FriendCell:BaseCell{
         return label
     }()
     
+    let messageLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = UIColor.darkGray
+        label.font = UIFont.systemFont(ofSize: 13)
+        return label
+    }()
+    
+    let timeLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 12)
+        label.textAlignment = .right
+        return label
+    }()
+    
     override func setupViews() {
         addSubview(dividerLineView)
         addSubview(profileImageView)
         
         setupContainerView()
         
-        addConstraintsWithFormat("H:|-12-[v0(36)]", views: profileImageView)
-        addConstraintsWithFormat("V:[v0(36)]", views: profileImageView)
+        addConstraintsWithFormat("H:|-12-[v0(58)]", views: profileImageView)
+        addConstraintsWithFormat("V:[v0(58)]", views: profileImageView)
         addConstraintsWithFormat("H:|-12-[v0]|", views: dividerLineView)
         addConstraintsWithFormat("V:[v0(1)]|", views: dividerLineView)
         
@@ -63,9 +85,14 @@ class FriendCell:BaseCell{
         addConstraint(NSLayoutConstraint(item: containerView, attribute: .centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1, constant: 0))
         
         containerView.addSubview(nameLabel)
+        containerView.addSubview(messageLabel)
+        containerView.addSubview(timeLabel)
         
-        containerView.addConstraintsWithFormat("H:|[v0]-12-|", views: nameLabel)
-        containerView.addConstraintsWithFormat("V:|[v0]|", views: nameLabel)
+        containerView.addConstraintsWithFormat("H:|[v0][v1(80)]-12-|", views: nameLabel, timeLabel)
+        containerView.addConstraintsWithFormat("V:|[v0][v1(24)]|", views: nameLabel, messageLabel)
+        containerView.addConstraintsWithFormat("H:|[v0]-30-|", views: messageLabel)
+        containerView.addConstraintsWithFormat("V:|[v0(24)]", views: timeLabel)
     }
     
 }
+

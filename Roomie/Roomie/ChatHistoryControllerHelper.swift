@@ -10,8 +10,7 @@ import UIKit
 import CoreData
 
 extension ChatHistoryController{
-    
-    
+   
     //only for test
     func clearHistory(){
         let delegate = UIApplication.shared.delegate as? AppDelegate
@@ -24,7 +23,7 @@ extension ChatHistoryController{
                 for cv in allCv! {
                     context.delete(cv)
                 }
-                try(context.save())
+                delegate?.saveContext()
             }catch let err{
                 print(err)
             }
@@ -32,27 +31,36 @@ extension ChatHistoryController{
         }
     }
     
-    func loadHistory(){
-       
+    func loadHistory() -> [Conversation]{
         let delegate = UIApplication.shared.delegate as? AppDelegate
         
         if let context = delegate?.managedObjectContext{
-            //Fetch all the fake data and rank by date
-            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Friend")
-            let sort = NSSortDescriptor(key: "messages", ascending: false)
+            
+            //Fake Data
+//            let zuck = createFriend(name: "Zuck", profileImage: "zuckprofile")
+//            
+//            
+//            let c1 = createConversation(title:"Guest")
+//            c1?.addToParticipants(zuck!)
+//            
+//            c1?.addToChatLogs(createMessage(text: "This is Zuck", from: zuck!)!)
+//            
+//            delegate?.saveContext()
+//            
+            
+            //Fetch all the persisted data and rank by date
+            let fetchRequest:NSFetchRequest<Conversation> = Conversation.fetchRequest()
+            let sort = NSSortDescriptor(key: "latestUpdateTime", ascending:true)
             fetchRequest.sortDescriptors = [sort]
+            
             do{
-                if let friends = try(context.fetch(fetchRequest) as? [Friend]){
-                    print(friends[1].name!)
-                }
+                 return (try(context.fetch(fetchRequest)))
                 
-                
-                
-            }catch let err{
-                print(err)
+            }catch{
+                print("Failed to load history")
             }
         }
         
-        
+        return []
     }
 }
