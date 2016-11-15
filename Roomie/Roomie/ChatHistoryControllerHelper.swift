@@ -46,7 +46,7 @@ extension ChatHistoryController{
 //            c1?.addToChatLogs(createMessage(text: "This is Zuck", from: zuck!)!)
 //            
 //            delegate?.saveContext()
-//            
+////
             
             //Fetch all the persisted data and rank by date
             let fetchRequest:NSFetchRequest<Conversation> = Conversation.fetchRequest()

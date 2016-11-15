@@ -10,6 +10,8 @@ import UIKit
 
 class MessageCell : BaseCell{
     
+    private let BUBBLE_WIDTH = 250
+    
     var friend : Friend?{
         didSet{
             if let profileImage = friend?.profileImage{
@@ -20,22 +22,22 @@ class MessageCell : BaseCell{
     
     var message : Message?{
         didSet{
-            if let m = message?.text, let frame = superview?.frame{
+            if let m = message?.text{
                 
-                messageLabel.frame = CGRect(x: 80, y: 0, width: frame.width, height: frame.height)
                 messageLabel.text = m
                 
                 if let f = message?.from{
                     friend = f
                 }
             }
-            
         }
     }
     
     private let messageLabel: UILabel = {
         let textLabel = UILabel()
         textLabel.backgroundColor = UIColor.lightGray
+        textLabel.numberOfLines = 25
+        
         textLabel.font = UIFont.systemFont(ofSize: 16)
         return textLabel
     }()
@@ -51,12 +53,12 @@ class MessageCell : BaseCell{
         
         addSubview(profileImageView)
         addConstraintsWithFormat("H:|-12-[v0(42)]", views: profileImageView)
-        addConstraintsWithFormat("V:[v0(42)]", views: profileImageView)
+        addConstraintsWithFormat("V:|[v0(42)]", views: profileImageView)
         
         addSubview(messageLabel)
-//        
-//        addConstraintsWithFormat("H:|-80-[v0]", views: messageLabel)
-//        addConstraintsWithFormat("V:|[v0]", views: messageLabel)
+        
+        addConstraintsWithFormat("H:|-66-[v0(250)]", views: messageLabel)
+        addConstraintsWithFormat("V:|[v0]", views: messageLabel)
     }
 }
 
